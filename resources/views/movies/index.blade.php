@@ -31,7 +31,9 @@
                                 <td>{{ $movie->title }}</td>
                                 <td>{{ $movie->year }}</td>
                                 <td>{{ $movie->genre }}</td>
-                                <td></td>
+                                <td>
+                                    <a class="btn btn-primary" href="{{ route('movies.show', ['movie'=> $movie])}}">Dettagli</a>
+                                </td>
                             </tr>
                         @empty
                             <tr>
