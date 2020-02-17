@@ -10,7 +10,7 @@
                 <h1>Dettagli film</h1>
             </div>
             <div class="col-sm-6 text-right">
-                <a class="btn btn-success mt-2" href="{{ route('movies.index') }}">Torno alla home</a>
+                <a class="btn btn-success mt-2" href="{{ route('movies.index') }}">Torno alla lista dei Film</a>
             </div>
         </div>
         <div class="row mt-5">

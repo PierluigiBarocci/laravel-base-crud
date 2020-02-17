@@ -34,6 +34,11 @@
                                 <td>
                                     <a class="btn btn-primary" href="{{ route('movies.show', ['movie'=> $movie])}}">Dettagli</a>
                                     <a class="btn btn-warning" href="{{ route('movies.edit', ['movie'=> $movie])}}">Modifica</a>
+                                    <form class="d-inline" action="{{ route('movies.destroy', ['movie'=> $movie])}}" method="post">
+                                        @csrf
+                                        @method('DELETE')
+                                        <input type="submit" class="btn btn-danger" name="" value="Elimina">
+                                    </form>
                                 </td>
                             </tr>
                         @empty
