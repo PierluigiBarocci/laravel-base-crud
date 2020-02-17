@@ -62,7 +62,7 @@ class MovieController extends Controller
      */
     public function edit(Movie $movie)
     {
-        //
+        return view('movies.edit', ['movie'=> $movie]);
     }
 
     /**
@@ -74,7 +74,9 @@ class MovieController extends Controller
      */
     public function update(Request $request, Movie $movie)
     {
-        //
+        $form_data = $request->all();
+        $movie->update($form_data);
+        return redirect()->route('movies.index');
     }
 
     /**

@@ -33,6 +33,7 @@
                                 <td>{{ $movie->genre }}</td>
                                 <td>
                                     <a class="btn btn-primary" href="{{ route('movies.show', ['movie'=> $movie])}}">Dettagli</a>
+                                    <a class="btn btn-warning" href="{{ route('movies.edit', ['movie'=> $movie])}}">Modifica</a>
                                 </td>
                             </tr>
                         @empty
